@@ -1,6 +1,6 @@
 ### 팀 코드: NNNNN
 ### 팀 내 역할 분담 및 각 팀원이 실제 수행한 내용
-**김용찬** : 
+**김용찬** : 응답한 설문 조회/응답 수정/응답 취소/통계 조회 기능에 대한 use case diagram, figma ui 화면, use case description 작성
 
 **오연비** : 회원가입/회원탈퇴/로그인,로그아웃 기능에 대한 use diagram, figma ui 화면, use case description 작성
 
