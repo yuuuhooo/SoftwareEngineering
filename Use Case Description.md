@@ -1,12 +1,7 @@
 ## Use Case Description
 
 
-#### Use case description: (유스케이스명)
-| Actor Action | System Response |
-|---|---|
-| 1. ooo | 2. ooo |
-
-#### Use case description: 회원가입 (Sign Up)
+### Use case description: 회원가입 (Sign Up)
 
 | Actor Action | System Response |
 |---|---|
@@ -18,7 +13,7 @@
 | A2. ID 중복 시 | 시스템이 이미 사용 중인 ID입니다. 메시지를 표시한다. → 3단계로 돌아간다. |
 | A3. 이메일 형식 오류 시 | 시스템이 올바른 이메일 형식을 입력하세요. 메시지를 표시한다. → 3단계로 돌아간다. |
 
-#### Use case description: 로그인 (Login)
+### Use case description: 로그인 (Login)
 
 | Actor Action | System Response |
 |---|---|
@@ -29,14 +24,14 @@
 | A1. ID 또는 비밀번호 불일치 시 | 시스템이 ID 또는 비밀번호가 올바르지 않습니다. 메시지를 표시한다. → 3단계로 돌아간다. |
 | A2. 필수 항목 미입력 시 | 시스템이 미입력 항목을 강조하고 오류 메시지를 표시한다. → 3단계로 돌아간다. |
 
-#### Use case description: 로그아웃 (Logout)
+### Use case description: 로그아웃 (Logout)
 
 | Actor Action | System Response |
 |---|---|
 | 1. 사용자가 로그아웃 버튼을 클릭한다. | 2. 시스템이 현재 세션을 종료한다. |
 | | 3. 시스템이 로그인 화면으로 이동시킨다. |
 
-#### Use case description: 회원탈퇴 (Withdraw Membership)
+### Use case description: 회원탈퇴 (Withdraw Membership)
 
 | Actor Action | System Response |
 |---|---|
@@ -45,14 +40,39 @@
 | | 5. 시스템이 탈퇴 완료 메시지를 표시하고 로그인 화면으로 이동시킨다. |
 | A1. 탈퇴 취소 시 | 회원이 취소 버튼을 클릭하면 탈퇴가 중단되고 이전 화면으로 돌아간다. |
 
-## Use case description: 응답한 설문 조회 (View Submitted Surveys)
+
+### Use case description: 설문 등록 (Survey Create)
+| Actor Action | System Response |
+|---|---|
+| | 1. 시스템이 설문 제목, 설문 설명, 설문 시작 시각과 설문 종료 시각, 설문 문항과 응답 항목을 입력할 수 있는 화면을 표시한다. |
+| 2. 관리자가 설문 제목, 설문 설명, 설문 시작 시각과 설문 종료 시각, 설문 문항과 응답 항목을 입력한다.| |
+| 3. 설문 항목이 여러 개라면 설문 문항 추가하기 버튼을 눌러 문항을 추가한 뒤 입력한다. | |
+| 4. 설문 등록 버튼을 클릭한다. |  |
+| | 5. 시스템이 입력된 설문을 저장한다.
+| | 6. 화면에 설문 등록 완료 알림을 표시한다. |
+
+
+### Use case description: 설문 리스트 조회 (View Survey List)
+| Actor Action | System Response |
+|---|---|
+|  | 1. 등록된 모든 설문의 리스트를 표시한다. |
+| 2. 상세 정보 조회를 원하는 설문의 이름을 클릭한다. | |
+| | 3. 설문의 상세 정보 내용을 팝업으로 표시한다. |
+| 4. 설문 삭제 버튼을 클릭한다. | |
+| 5. 삭제하고자 하는 모든 설문 리스트를 클릭하여 선택한다. | |
+| 6. 선택한 설문 N개 삭제하기 버튼을 클릭한다. | |
+| | 7. 선택된 설문을 모두 삭제한다. |
+| | 8. 화면에 설문이 삭제되었습니다 라는 메시지를 표시한다.|
+
+
+### Use case description: 응답한 설문 조회 (View Submitted Surveys)
 
 | Actor Action | System Response |
 |--------------|-----------------|
 | 1. 회원이 응답한 설문 조회 메뉴를 클릭한다. | 2. 시스템이 회원이 응답한 모든 설문 정보를 조회한다. |
 | | 3. 시스템이 응답한 설문 목록을 한 화면에 표시한다. (설문 제목, 응답 내용, 응답 일시) |
 
-## Use case description: 응답 수정 (Modify Response)
+### Use case description: 응답 수정 (Modify Response)
 
 | Actor Action | System Response |
 |--------------|-----------------|
@@ -63,7 +83,7 @@
 | | 7. 시스템이 수정 완료 메시지를 표시하고 응답한 설문 목록으로 이동시킨다. |
 | **A1. 설문이 종료된 경우** | 시스템이 "종료된 설문은 수정할 수 없습니다." 메시지를 표시한다. |
 
-## Use case description: 응답 취소 (Cancel Response)
+### Use case description: 응답 취소 (Cancel Response)
 
 | Actor Action | System Response |
 |--------------|-----------------|
@@ -72,7 +92,7 @@
 | | 5. 시스템이 취소 완료 메시지를 표시하고 응답한 설문 목록으로 이동시킨다. |
 | **A1. 설문이 종료된 경우** | 시스템이 "종료된 설문은 취소할 수 없습니다." 메시지를 표시한다. |
 
-## Use case description: 통계 조회 (View Statistics)
+### Use case description: 통계 조회 (View Statistics)
 
 | Actor Action | System Response |
 |--------------|-----------------|
@@ -80,7 +100,7 @@
 | 3. 관리자가 검색 단위를 선택한다. | 4. 시스템이 선택된 기간의 통계 정보를 집계한다. |
 | | 5. 시스템이 전체 설문 수, 종료된 설문 수, 총 응답 수를 화면에 표시한다. |
 
-## Use case description: 설문 검색 (Search Survey)
+### Use case description: 설문 검색 (Search Survey)
 
 | Actor Action (회원) | System Response |
 | --- | --- |
@@ -88,14 +108,14 @@
 | 2. 조회할 설문 상태(현재 진행 중 / 향후 예정 / 종료됨)를 선택하고 검색 키워드를 입력한 후 검색 버튼을 클릭한다. |  |
 |  | 3. 선택한 상태와 키워드 조건에 맞는 설문 리스트를 출력한다. |
 
-## Use case description: 설문 상세 정보 조회 (View Survey Detail)
+### Use case description: 설문 상세 정보 조회 (View Survey Detail)
 
 | Actor Action (회원) | System Response |
 | --- | --- |
 | 1. 검색된 설문 리스트에서 특정 설문을 선택한다. |  |
 |  | 2. 새로운 화면에서 설문 제목, 설명, 문항, 응답 항목, 시작 시각, 마감 시각 등 상세 정보를 표시한다. 현재 진행 중인 설문인 경우 응답 버튼을 활성화하고, 그 외의 경우 비활성화한다. |
 
-## Use case description: 설문 응답 (Respond to Survey)
+### Use case description: 설문 응답 (Respond to Survey)
 
 | Actor Action (회원) | System Response |
 | --- | --- |
